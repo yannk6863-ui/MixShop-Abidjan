@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Validation de commande - MixShop Abidjan</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-main">MixShop</span>
+        <span class="logo-sub">Abidjan</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie-accessoires.html">Accessoires</a></li>
+          <li><a href="categorie-maillots.html">Maillots</a></li>
+          <li><a href="categorie-chaussures.html">Chaussures</a></li>
+          <li><a href="categorie-habits.html">Habits</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-link">
+        🛒
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <div class="container">
+        <h1>Validation de commande</h1>
+        <p>Remplissez vos informations pour finaliser la commande.</p>
+      </div>
+    </section>
+
+    <section class="checkout">
+      <div class="container checkout-grid">
+        <form id="checkout-form" class="card form-card">
+          <h2>Informations de livraison</h2>
+          <label>
+            Nom complet
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Numéro de téléphone (WhatsApp)
+            <input type="tel" name="phone" required />
+          </label>
+          <label>
+            Commune
+            <input type="text" name="city" placeholder="Cocody, Yopougon, Marcory..." required />
+          </label>
+          <label>
+            Adresse complète
+            <textarea name="address" rows="3" required></textarea>
+          </label>
+          <label>
+            Méthode de paiement
+            <select name="payment" required>
+              <option value="livraison">Paiement à la livraison</option>
+              <option value="om">Orange Money</option>
+              <option value="mtn">MTN Mobile Money</option>
+              <option value="moov">Moov Money</option>
+            </select>
+          </label>
+          <button type="submit" class="btn primary full">Confirmer la commande</button>
+          <p class="form-note">
+            ⚠️ Ce site est une démo : aucune vraie transaction ne sera effectuée.
+          </p>
+        </form>
+
+        <aside class="card summary-card">
+          <h2>Récapitulatif</h2>
+          <div id="checkout-summary"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="order-modal" class="modal hidden">
+    <div class="modal-content card">
+      <h2>Commande enregistrée ✅</h2>
+      <p>
+        Merci pour votre commande sur <strong>MixShop Abidjan</strong> !
+        Un conseiller vous contactera par téléphone ou WhatsApp pour confirmer les détails.
+      </p>
+      <a href="index.html" class="btn primary">Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> MixShop Abidjan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

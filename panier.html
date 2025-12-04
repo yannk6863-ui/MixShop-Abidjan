@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panier - MixShop Abidjan</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-main">MixShop</span>
+        <span class="logo-sub">Abidjan</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie-accessoires.html">Accessoires</a></li>
+          <li><a href="categorie-maillots.html">Maillots</a></li>
+          <li><a href="categorie-chaussures.html">Chaussures</a></li>
+          <li><a href="categorie-habits.html">Habits</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-link">
+        🛒
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <div class="container">
+        <h1>Votre panier</h1>
+        <p>Vérifiez vos articles avant de valider la commande.</p>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="container">
+        <div id="cart-empty" class="cart-empty">
+          <p>Votre panier est vide pour le moment.</p>
+          <a href="index.html" class="btn primary">Continuer mes achats</a>
+        </div>
+
+        <div id="cart-content" class="cart-content hidden">
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th>Produit</th>
+                <th>Catégorie</th>
+                <th>Prix</th>
+                <th>Qté</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+          </table>
+
+          <div class="cart-summary">
+            <p>Sous-total : <span id="cart-subtotal">0 FCFA</span></p>
+            <p>Frais de livraison (estimés) : <span id="cart-shipping">2 000 FCFA</span></p>
+            <p class="cart-total-row">Total à payer : <span id="cart-total">0 FCFA</span></p>
+            <div class="cart-actions">
+              <button id="cart-clear" class="btn secondary">Vider le panier</button>
+              <a href="commande.html" class="btn primary">Valider la commande</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> MixShop Abidjan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

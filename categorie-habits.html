@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habits & vêtements - MixShop Abidjan</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-main">MixShop</span>
+        <span class="logo-sub">Abidjan</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie-accessoires.html">Accessoires</a></li>
+          <li><a href="categorie-maillots.html">Maillots</a></li>
+          <li><a href="categorie-chaussures.html">Chaussures</a></li>
+          <li><a href="categorie-habits.html" class="active">Habits</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-link">
+        🛒
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <div class="container">
+        <h1>Habits & vêtements</h1>
+        <p>Des tenues tendance pour tous les styles.</p>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="grid grid-4">
+          <article class="product-card">
+  <div class="product-thumb placeholder-thumb">👕</div>
+  <h3 class="product-title">T-shirt oversize Mix</h3>
+  <p class="product-price" data-price="8000">8 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="h1"
+    data-name="T-shirt oversize Mix"
+    data-price="8000"
+    data-category="Habits"
+  >
+    Ajouter au panier
+  </button>
+</article>\n<article class="product-card">
+  <div class="product-thumb placeholder-thumb">👖</div>
+  <h3 class="product-title">Jean slim bleu</h3>
+  <p class="product-price" data-price="18000">18 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="h2"
+    data-name="Jean slim bleu"
+    data-price="18000"
+    data-category="Habits"
+  >
+    Ajouter au panier
+  </button>
+</article>\n<article class="product-card">
+  <div class="product-thumb placeholder-thumb">🧥</div>
+  <h3 class="product-title">Survêtement complet</h3>
+  <p class="product-price" data-price="25000">25 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="h3"
+    data-name="Survêtement complet"
+    data-price="25000"
+    data-category="Habits"
+  >
+    Ajouter au panier
+  </button>
+</article>\n<article class="product-card">
+  <div class="product-thumb placeholder-thumb">👔</div>
+  <h3 class="product-title">Chemise classe</h3>
+  <p class="product-price" data-price="15000">15 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="h4"
+    data-name="Chemise classe"
+    data-price="15000"
+    data-category="Habits"
+  >
+    Ajouter au panier
+  </button>
+</article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> MixShop Abidjan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

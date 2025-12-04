@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MixShop Abidjan - Boutique en ligne</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-main">MixShop</span>
+        <span class="logo-sub">Abidjan</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="categorie-accessoires.html">Accessoires</a></li>
+          <li><a href="categorie-maillots.html">Maillots</a></li>
+          <li><a href="categorie-chaussures.html">Chaussures</a></li>
+          <li><a href="categorie-habits.html">Habits</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-link">
+        🛒
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>Bienvenue sur <span>MixShop Abidjan</span></h1>
+          <p>
+            Votre boutique en ligne pour accessoires de téléphone, maillots, chaussures
+            et habits livrés partout à Abidjan.
+          </p>
+          <div class="hero-actions">
+            <a href="#nouveautes" class="btn primary">Voir les nouveautés</a>
+            <a href="categorie-accessoires.html" class="btn secondary">Accessoires téléphone</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Livraison rapide à Abidjan</h2>
+          <ul>
+            <li>📦 Paiement à la livraison possible</li>
+            <li>📱 Support WhatsApp</li>
+            <li>💳 Mobile Money (Orange, MTN, Moov)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2 class="section-title">Nos catégories</h2>
+        <div class="grid grid-4">
+          <a href="categorie-accessoires.html" class="category-card">
+            <div class="category-icon">📱</div>
+            <h3>Accessoires téléphone</h3>
+            <p>Coques, écouteurs, chargeurs, verres trempés...</p>
+          </a>
+          <a href="categorie-maillots.html" class="category-card">
+            <div class="category-icon">🎽</div>
+            <h3>Maillots</h3>
+            <p>Clubs européens, sélections, personnalisation.</p>
+          </a>
+          <a href="categorie-chaussures.html" class="category-card">
+            <div class="category-icon">👟</div>
+            <h3>Chaussures</h3>
+            <p>Casual, sport, ville, pour homme et femme.</p>
+          </a>
+          <a href="categorie-habits.html" class="category-card">
+            <div class="category-icon">👕</div>
+            <h3>Habits</h3>
+            <p>T-shirts, jeans, survêtements, tenues tendance.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="nouveautes">
+      <div class="container">
+        <h2 class="section-title">Nouveautés</h2>
+        <div class="grid grid-4">
+          <article class="product-card">
+            <div class="product-tag">Nouveau</div>
+            <div class="product-thumb placeholder-thumb"><img width="80px" src="SYLY.jpg" alt=""></div>
+            <h3 class="product-title">Coque silicone iPhone</h3>
+            <p class="product-price" data-price="5000">5 000 FCFA</p>
+            <button
+              class="btn full add-to-cart"
+              data-id="p1"
+              data-name="Coque silicone iPhone"
+              data-price="5000"
+              data-category="Accessoires"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-tag">Top vente</div>
+            <div class="product-thumb placeholder-thumb"><img width="80px" src="ma.png" alt=""></div>
+            <h3 class="product-title">Maillot PSG domicile 24/25</h3>
+            <p class="product-price" data-price="15000">15 000 FCFA</p>
+            <button
+              class="btn full add-to-cart"
+              data-id="p2"
+              data-name="Maillot PSG domicile 24/25"
+              data-price="15000"
+              data-category="Maillots"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb placeholder-thumb"><img width="80px" src="SN.jpg" alt=""></div>
+            <h3 class="product-title">Sneakers MixStyle</h3>
+            <p class="product-price" data-price="20000">20 000 FCFA</p>
+            <button
+              class="btn full add-to-cart"
+              data-id="p3"
+              data-name="Sneakers MixStyle"
+              data-price="20000"
+              data-category="Chaussures"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div class="product-thumb placeholder-thumb"><img width="80px" src="T-shirt-oversize-épais-blanc-Homme-grand-200739288.jpeg" alt=""></div>
+            <h3 class="product-title">T-shirt oversize Mix</h3>
+            <p class="product-price" data-price="8000">8 000 FCFA</p>
+            <button
+              class="btn full add-to-cart"
+              data-id="p4"
+              data-name="T-shirt oversize Mix"
+              data-price="8000"
+              data-category="Habits"
+            >
+              Ajouter au panier
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container grid grid-3">
+        <div class="info-card">
+          <h3>Livraison</h3>
+          <p>Livraison disponible dans toutes les communes d'Abidjan.</p>
+        </div>
+        <div class="info-card">
+          <h3>Paiement</h3>
+          <p>Cash à la livraison ou Mobile Money sécurisé.</p>
+        </div>
+        <div class="info-card">
+          <h3>Contact</h3>
+          <p>WhatsApp : +225 01 03 05 37 83</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> MixShop Abidjan - Tous droits réservés.</p>
+      
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

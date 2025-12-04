@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaussures - MixShop Abidjan</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-content">
+      <div class="logo">
+        <span class="logo-main">MixShop</span>
+        <span class="logo-sub">Abidjan</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="categorie-accessoires.html">Accessoires</a></li>
+          <li><a href="categorie-maillots.html">Maillots</a></li>
+          <li><a href="categorie-chaussures.html" class="active">Chaussures</a></li>
+          <li><a href="categorie-habits.html">Habits</a></li>
+        </ul>
+      </nav>
+      <a href="panier.html" class="cart-link">
+        🛒
+        <span id="cart-count" class="cart-count">0</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <div class="container">
+        <h1>Chaussures</h1>
+        <p>Des modèles pour le sport, la ville et le quotidien.</p>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="grid grid-4">
+          <article class="product-card">
+  <div class="product-thumb placeholder-thumb">👟</div>
+  <h3 class="product-title">Sneakers MixStyle blanche</h3>
+  <p class="product-price" data-price="20000">20 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="c1"
+    data-name="Sneakers MixStyle blanche"
+    data-price="20000"
+    data-category="Chaussures"
+  >
+    Ajouter au panier
+  </button>
+</article>\n<article class="product-card">
+  <div class="product-thumb placeholder-thumb">🏃</div>
+  <h3 class="product-title">Baskets running ProRun</h3>
+  <p class="product-price" data-price="25000">25 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="c2"
+    data-name="Baskets running ProRun"
+    data-price="25000"
+    data-category="Chaussures"
+  >
+    Ajouter au panier
+  </button>
+</article>\n<article class="product-card">
+  <div class="product-thumb placeholder-thumb">🩴</div>
+  <h3 class="product-title">Sandales confort</h3>
+  <p class="product-price" data-price="12000">12 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="c3"
+    data-name="Sandales confort"
+    data-price="12000"
+    data-category="Chaussures"
+  >
+    Ajouter au panier
+  </button>
+</article>\n<article class="product-card">
+  <div class="product-thumb placeholder-thumb">🥿</div>
+  <h3 class="product-title">Mocassins élégants</h3>
+  <p class="product-price" data-price="28000">28 000 FCFA</p>
+  <button
+    class="btn full add-to-cart"
+    data-id="c4"
+    data-name="Mocassins élégants"
+    data-price="28000"
+    data-category="Chaussures"
+  >
+    Ajouter au panier
+  </button>
+</article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> MixShop Abidjan.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
